@@ -476,13 +476,36 @@ docker rmi kubernetes-zero-cluster:v1
 ---
 
 ## 🎯 Learning Exercises
-- Develop locally → ensure app works.
- Package in Docker → make app portable.
-Deploy in Kubernetes → automated scaling, load balancing, health checks.
-Access externally → via NodePort, LoadBalancer, or port forwarding.
-Scale and update → increase replicas, rolling updates.
-Debug and monitor → logs, pod status, events.
-Cleanup → remove resources when no longer needed.
+# Kubernetes Demo Application Workflow
+
+## 1. Develop locally
+- Ensure the app works on your machine before containerizing.
+- Test functionality and debug as needed.
+
+## 2. Package in Docker
+- Containerize the app to make it portable.
+- Ensures the same environment runs anywhere.
+
+## 3. Deploy in Kubernetes
+- Deploy the containerized app as a Kubernetes Deployment.
+- Provides automated scaling, load balancing, and health checks.
+
+## 4. Access externally
+- Expose the app via NodePort, LoadBalancer, or port forwarding.
+- Makes the app reachable from outside the cluster.
+
+## 5. Scale and update
+- Increase or decrease replicas as needed.
+- Perform rolling updates to deploy new versions without downtime.
+
+## 6. Debug and monitor
+- Check logs, pod status, and events.
+- Inspect pods directly for troubleshooting.
+
+## 7. Cleanup
+- Remove deployments, services, and Docker images when no longer needed.
+- Frees up resources and keeps the environment clean.
+
 
 ---
 
