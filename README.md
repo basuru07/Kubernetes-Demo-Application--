@@ -476,21 +476,13 @@ docker rmi kubernetes-zero-cluster:v1
 ---
 
 ## 🎯 Learning Exercises
-
-### Exercise 1: Basic Deployment
-Deploy the application and access it via NodePort
-
-### Exercise 2: Scaling
-Scale from 3 to 5 replicas and observe load balancing
-
-### Exercise 3: Updates
-Update the version and perform a rolling update
-
-### Exercise 4: Rollback
-Rollback to the previous version
-
-### Exercise 5: Troubleshooting
-Intentionally break something and practice debugging
+- Develop locally → ensure app works.
+ Package in Docker → make app portable.
+Deploy in Kubernetes → automated scaling, load balancing, health checks.
+Access externally → via NodePort, LoadBalancer, or port forwarding.
+Scale and update → increase replicas, rolling updates.
+Debug and monitor → logs, pod status, events.
+Cleanup → remove resources when no longer needed.
 
 ---
 
